@@ -10,10 +10,10 @@ import { TextAnimate } from "./ui/text-animate";
 import HeadingAnimaiton from "./HeadingAnimaiton";
 const Heading = () => {
   return (
-    <div className="relative h-[500px] w-full overflow-hidden bg-background">
-      <Meteors number={30} />
-      <div className="lg:px-28 md:px-16 px-4 flex justify-between">
-        <div className="space-y-6 w-full md:w-1/2 md:mt-10 flex flex-col justify-center">
+    <div className="relative md:h-[500px] w-full overflow-hidden bg-background">
+      <Meteors number={10} />
+      <div className="lg:px-28 md:px-16 px-4 md:flex justify-between">
+        <div className="space-y-6 w-full md:w-1/2 md:mt-10 flex flex-col justify-center md:text-left text-center">
           <h1
             className="text-[24px] md:text-4xl font-semibold text-black"
             data-aos="fade-up"
@@ -45,7 +45,7 @@ const Heading = () => {
             >
               Download <TbFileCv size={20} className="ml-3" />
             </a>
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 md:justify-start justify-center">
               <Link
                 href={"https://github.com/ataurwd"}
                 target="blank"

@@ -1,9 +1,12 @@
+import ProjectCard from '@/components/ProjectCard';
+import ProjectHeading from '@/components/ProjectHeading';
 import React from 'react';
 
 const Projects  = () => {
     return (
         <div>
-            project
+            <ProjectHeading />
+            <ProjectCard/>
         </div>
     );
 };
