@@ -3,10 +3,12 @@ import Link from "next/link";
 import { FaCode, FaLaptopCode } from "react-icons/fa";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineContactPhone } from "react-icons/md";
+import { ScrollProgress } from "./ui/scroll-progress";
 
 const Navbar = () => {
   return (
-    <div className="navbar md:px-20 relative">
+    <div className="navbar md:px-20 relative sticky top-0 z-50 bg-white border-b">
+       <ScrollProgress className="top-[65px]" />
       {/* Navbar Start */}
       <div className="navbar-start">
         {/* Dropdown for Mobile */}

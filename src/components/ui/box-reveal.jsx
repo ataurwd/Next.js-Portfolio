@@ -1,11 +1,11 @@
-"use client";;
+"use client";
 import { motion, useAnimation, useInView } from "motion/react";
 import { useEffect, useRef } from "react";
 
 export const BoxReveal = ({
   children,
   width = "fit-content",
-  boxColor = "#022C22",
+  boxColor = "#10b981",
   duration
 }) => {
   const mainControls = useAnimation();

@@ -1,3 +1,5 @@
+"use client";
+
 import { Meteors } from "./ui/meteors";
 
 import { FacebookIcon, Github } from "lucide-react";
@@ -10,7 +12,7 @@ const Heading = () => {
   return (
     <div className="relative h-[500px] w-full overflow-hidden bg-background">
       <Meteors number={30} />
-      <div className="lg:px-28 lg:mt-10 md:px-16 md:mt-5 px-4 mt-5 flex justify-between">
+      <div className="lg:px-28 md:px-16 px-4 flex justify-between">
         <div className="space-y-6 w-full md:w-1/2 md:mt-10 flex flex-col justify-center">
           <h1
             className="text-[24px] md:text-4xl font-semibold text-black"
