@@ -16,13 +16,15 @@ const Heading = () => {
             className="text-[24px] md:text-4xl font-semibold text-black"
             data-aos="fade-up"
           >
-            HI I'm Ataur Rahman <br />
+            <br />
             <div className="relative inline-block ">
               <TextAnimate animation="blurInUp" by="character">
-                A Passionate Frontend Web
+                HI I'm Ataur Rahman
               </TextAnimate>
             </div>
-            <p>Developer</p>
+            <p>
+              A Passionate Frontend <br /> Web Developer
+            </p>
           </h1>
           <p data-aos="zoom-in" className="text-gray-400 text-sm md:text-base">
             As a skilled frontend developer, I specialize in building dynamic,
@@ -69,7 +71,7 @@ const Heading = () => {
 
         {/* Right Side Image */}
         <div className="w-full md:w-1/2 mt-6 md:mt-5">
-          <HeadingAnimaiton/>
+          <HeadingAnimaiton />
           {/* <img className="shadow-sm rounded-md border-2 border-emerald-400" src={headimg} alt="" /> */}
         </div>
       </div>

@@ -70,3 +70,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+#servicesImg{
+  border-radius: 30% 70% 70% 30% / 46% 49% 51% 54% ;
+  border: 4px solid #036A3E;
+  /* background: linear-gradient(-225deg, #B6CEE8 0%, #F578DC 100%); */
+}
