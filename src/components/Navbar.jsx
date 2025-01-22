@@ -83,7 +83,7 @@ const Navbar = () => {
       {/* Navbar Center */}
       <div className="navbar-center hidden lg:flex">
         <ul
-          className={`menu menu-horizontal px-1 space-x-5 text-[17px] font-medium`}
+          className={`menu menu-horizontal px-1 space-x-5 text-[16px] font-medium`}
         >
           <li>
             <Link href="/" className="">
