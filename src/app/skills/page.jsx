@@ -145,8 +145,8 @@ const Skills = () => {
         duration={3}
         repeatDelay={1}
         className={cn(
-          "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
-          "inset-x-0 inset-y-[-10%] h-[100%] skew-y-12 w-[100%]",
+          "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]",
+          "inset-x-0 inset-y-[-10%] h-[58%] skew-y-0 w-[100%]",
         )}
       />
       {/* <div className="grid place-items-center"><SkillAnimation/></div> */}
