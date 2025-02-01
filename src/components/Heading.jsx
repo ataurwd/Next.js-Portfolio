@@ -8,12 +8,13 @@ import { TbFileCv } from "react-icons/tb";
 import { FaLinkedin } from "react-icons/fa6";
 import { TextAnimate } from "./ui/text-animate";
 import HeadingAnimaiton from "./HeadingAnimaiton";
+import HeadingNewAnimation from "./HeadingNewAnimation";
 const Heading = () => {
   return (
     <div className="relative md:h-[500px] w-full overflow-hidden bg-background">
       <Meteors number={10} />
       <div className="lg:px-28 md:px-16 px-4 md:flex justify-between">
-        <div className="space-y-6 w-full md:w-1/2 md:mt-10 flex flex-col justify-center md:text-left text-center">
+        <div className="space-y-6 w-full md:w-1/2 md:mt-0 flex flex-col justify-center md:text-left text-center">
           <h1
             className="text-[24px] md:text-4xl font-semibold text-black"
             data-aos="fade-up"
@@ -72,8 +73,9 @@ const Heading = () => {
         </div>
 
         {/* Right Side Image */}
-        <div className="w-full md:w-1/2 mt-6 md:mt-5">
-          <HeadingAnimaiton />
+        <div className="w-full md:w-1/2 mt-6 md:mt-10 grid place-items-center">
+          {/* <HeadingAnimaiton /> */}
+          <HeadingNewAnimation/>
           {/* <img className="shadow-sm rounded-md border-2 border-emerald-400" src={headimg} alt="" /> */}
         </div>
       </div>

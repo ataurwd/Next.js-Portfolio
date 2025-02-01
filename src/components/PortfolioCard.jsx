@@ -85,69 +85,69 @@ export function PortfolioCard() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {data.map((project) => (
-          <div
-            key={project.id}
-            className="bg-gray-50 dark:bg-black border dark:border-white/[0.2] border-black/[0.1] rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-6"
-          >
-            {/* Project Image */}
-            <img
-              src={project.img}
-              alt={project.name}
-              className="h-56 w-full object-cover rounded-md"
-              width={500}
-              height={400}
-            />
-            {/* Project Name */}
-            <h2 className="text-lg font-bold text-neutral-800 dark:text-white mt-4">
-              {project.name}
-            </h2>
-            {/* Language Badges */}
-            <div className="flex flex-wrap gap-2 mt-3">
-              {project.language.map((tech, index) => (
-                <span
-                  key={index}
-                  className="badge badge-outline border-emerald-800 text-sm dark:text-white"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-            {/* Links */}
-            <div className="flex items-center justify-between mt-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {data.map((project) => (
+        <div
+          key={project.id}
+          className="bg-gray-50 cursor-pointer dark:bg-black border dark:border-white/[0.2] border-black/[0.1] rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-5"
+        >
+          {/* Project Image */}
+          <img
+            src={project.img}
+            alt={project.name}
+            className="w-full h-48 sm:h-56 object-cover rounded-md"
+            width={500}
+            height={400}
+          />
+          {/* Project Name */}
+          <h2 className="text-lg font-bold text-neutral-800 dark:text-white mt-4">
+            {project.name}
+          </h2>
+          {/* Language Badges */}
+          <div className="flex flex-wrap gap-2 mt-3">
+            {project.language.map((tech, index) => (
+              <span
+                key={index}
+                className="px-3 py-1 text-sm border border-emerald-800 rounded-full text-gray-700 dark:text-white"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+          {/* Links */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between mt-4">
+            <a
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-sm font-medium text-blue-600 hover:text-blue-500"
+            >
+              <FaExternalLinkAlt className="mr-2" /> Live Demo
+            </a>
+            <div className="flex gap-3 mt-2 sm:mt-0">
               <a
-                href={project.liveLink}
+                href={project.repoLinkClient}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-sm font-medium text-blue-600 hover:text-blue-500"
+                className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-300 hover:underline"
               >
-                <FaExternalLinkAlt className="mr-2" /> Live Demo
+                <FaGithub className="mr-2" /> Client
               </a>
-              <div className="flex gap-3">
+              {project.repoLinkServer && (
                 <a
-                  href={project.repoLinkClient}
+                  href={project.repoLinkServer}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-300 hover:underline"
                 >
-                  <FaGithub className="mr-2" /> Client 
+                  <FaGithub className="mr-2" /> Server
                 </a>
-                {project.repoLinkServer && (
-                  <a
-                    href={project.repoLinkServer}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-300 hover:underline"
-                  >
-                    <FaGithub className="mr-2" /> Server 
-                  </a>
-                )}
-              </div>
+              )}
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
+  </div>
   );
 }

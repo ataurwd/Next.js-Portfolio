@@ -44,8 +44,8 @@ const About = () => {
           <p className="text-gray-600 text-sm md:text-base">
             As a frontend developer, I started my journey by mastering HTML,
             CSS, and JavaScript. Over time, I explored popular libraries and
-            frameworks like React and Tailwind CSS, which helped me build
-            modern, dynamic websites. Through freelance projects, I learned to
+            frameworks like React, Next.js and Tailwind CSS, which helped me build
+            modern, dynamic websites. I learned to
             create user-friendly, responsive designs that provide seamless
             experiences across devices. Every project presented new challenges,
             pushing me to grow and refine my skills, making me passionate about

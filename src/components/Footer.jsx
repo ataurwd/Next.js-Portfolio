@@ -1,9 +1,19 @@
-"use client"
+"use client";
+
+import { FlickeringGrid } from "./ui/flickering-grid";
+
 const Footer = () => {
   return (
-    <footer className=" text-gray-300 py-8 bg-cover bg-no-repeat bg-black">
-
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+    <footer className=" text-gray-300 py-8 bg-cover bg-no-repeat bg-black relative">
+      <FlickeringGrid
+        className="absolute inset-0 z-0 w-full h-auto"
+        squareSize={4}
+        gridGap={10}
+        color="#6B7280"
+        maxOpacity={0.2}
+        flickerChance={0.1}
+      />
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center z-50 relative">
         {/* Left Section: Name and Description */}
         <div className="text-center md:text-left mb-4 md:mb-0">
           <h1 className="text-2xl font-bold text-white">Ataur Rahman</h1>
