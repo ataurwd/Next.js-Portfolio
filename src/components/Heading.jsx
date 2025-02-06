@@ -9,6 +9,8 @@ import { FaLinkedin } from "react-icons/fa6";
 import { TextAnimate } from "./ui/text-animate";
 import HeadingAnimaiton from "./HeadingAnimaiton";
 import HeadingNewAnimation from "./HeadingNewAnimation";
+// import resume from './Resume.pdf'
+
 const Heading = () => {
   return (
     <div className="relative md:h-[500px] w-full overflow-hidden bg-background">
@@ -39,10 +41,9 @@ const Heading = () => {
             <a
               className="py-2 px-4 rounded-xl text-md font-medium bg-emerald-950 
           text-emerald-500 border border-emerald-900 flex items-center justify-center"
-              href={
-                "https://drive.google.com/file/d/1NfX0kL5KpFRcXZCqlEIHJqpYTphmjIi2/view?usp=sharing"
-              }
-              download
+              href="/Resume.pdf"
+              
+              download={"Resume.pdf"}
             >
               Download <TbFileCv size={20} className="ml-3" />
             </a>
