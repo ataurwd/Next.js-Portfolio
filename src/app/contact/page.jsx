@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <section className="bg-gradient-to-r from-emerald-200 via-emerald-500 to-emerald-700 py-16 text-white">
+        <section className=" py-16 text-black">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center mb-6">Contact Me</h2>
+          <h2 className="text-4xl font-bold text-center mb-6 bg-gradient-to-r from-emerald-500 via-emerald-700 to-emerald-500 bg-[200%_auto] text-transparent bg-clip-text animate-text-gradient">Contact Me</h2>
           <p className="text-center text-lg mb-12">
             Feel free to get in touch! Connect with me or send me a message below.
           </p>
@@ -41,7 +41,7 @@ const Contact = () => {
                       href="mailto:ataur@example.com"
                       className="hover:underline"
                     >
-                      ataurrahman24707@gmail.com
+                      wdataur@gmail.com
                     </a>
                   </span>
                 </div>

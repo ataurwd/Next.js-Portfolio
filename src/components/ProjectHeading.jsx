@@ -2,8 +2,6 @@ import React from "react";
 import { HyperText } from "./ui/hyper-text";
 import Image from "next/image";
 import banner from "../assets/Untitled design (1).png";
-import { InteractiveGridPattern } from "./ui/interactive-grid-pattern";
-import { cn } from "@/lib/utils";
 
 const ProjectHeading = () => {
   return (
