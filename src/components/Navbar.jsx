@@ -4,6 +4,7 @@ import { FaCode, FaLaptopCode } from "react-icons/fa";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineContactPhone } from "react-icons/md";
 import { ScrollProgress } from "./ui/scroll-progress";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -36,8 +37,10 @@ const Navbar = () => {
           <div className="relative">
             {/* Mobile Logo */}
             <Link href="/" className="font-semibold text-xl block md:hidden">
-              <img
-                src="https://ataur-wd.netlify.app/assets/logo-CicHu1CF.png"
+              <Image
+                width={100}
+                height={100}
+                src="/assets/logo/logo.png"
                 alt="Logo"
                 className="h-12 md:w-auto w-24 absolute -right-[168px] -top-[44px]"
               />

@@ -5,18 +5,20 @@ import React from "react";
 import { Github } from "lucide-react";
 import { HyperText } from "./ui/hyper-text";
 import { BoxReveal } from "./ui/box-reveal";
+import Image from "next/image";
 
 const About = () => {
   return (
     <div className="md:pb-24 lg:px-28 md:px-10 px-4 grid grid-cols-1 md:grid-cols-2 md:py-16 z-50">
       {/* Right Side - Smaller Image */}
       <div className="flex justify-center items-center">
-        <img
-          data-aos="zoom-in"
+        <Image
           id="servicesImg"
-          src="https://i.ibb.co.com/2kLbnx7/434336422-1477014999830681-8024971910275079672-n.jpg"
+          src="/assets/devimg/devimg.jpg"
           alt="About Me"
           className="w-3/4 md:w-2/3 lg:w-[70%] opacity-9 hover:border-none"
+          width={400}
+          height={400}
         />
       </div>
       {/* Left Side - Centered Text */}

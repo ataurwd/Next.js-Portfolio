@@ -1,7 +1,5 @@
-import { PortfolioCard } from '@/components/PortfolioCard';
 import ProjectCard from '@/components/ProjectCard';
 import ProjectHeading from '@/components/ProjectHeading';
-import React from 'react';
 
 const Projects  = () => {
     return (

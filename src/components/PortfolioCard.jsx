@@ -7,7 +7,7 @@ export function PortfolioCard() {
   const data = [
     {
       id: 1,
-      name: "User-Friendly Platform for Tour Planning and Booking",
+      name: "Next.js-Powered Educational Portal for Engineering Excellence",
       language: [
         "Next.js",
         "React.js",

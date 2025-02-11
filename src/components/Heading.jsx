@@ -4,17 +4,16 @@ import { Meteors } from "./ui/meteors";
 
 import { FacebookIcon, Github } from "lucide-react";
 import Link from "next/link";
-import { TbFileCv } from "react-icons/tb";
 import { FaLinkedin } from "react-icons/fa6";
-import { TextAnimate } from "./ui/text-animate";
-import HeadingAnimaiton from "./HeadingAnimaiton";
+import { TbFileCv } from "react-icons/tb";
 import HeadingNewAnimation from "./HeadingNewAnimation";
+import { TextAnimate } from "./ui/text-animate";
 // import resume from './Resume.pdf'
 
 const Heading = () => {
   return (
     <div className="relative md:h-[500px] w-full overflow-hidden bg-background">
-      <Meteors number={10} />
+      <Meteors number={15} />
       <div className="lg:px-28 md:px-16 px-4 md:flex justify-between">
         <div className="space-y-6 w-full md:w-1/2 md:mt-0 flex flex-col justify-center md:text-left text-center">
           <h1
@@ -42,7 +41,6 @@ const Heading = () => {
               className="py-2 px-4 rounded-xl text-md font-medium bg-emerald-950 
           text-emerald-500 border border-emerald-900 flex items-center justify-center"
               href="/Resume.pdf"
-              
               download={"Resume.pdf"}
             >
               Download <TbFileCv size={20} className="ml-3" />
@@ -76,7 +74,7 @@ const Heading = () => {
         {/* Right Side Image */}
         <div className="w-full md:w-1/2 mt-6 md:mt-10 grid place-items-center">
           {/* <HeadingAnimaiton /> */}
-          <HeadingNewAnimation/>
+          <HeadingNewAnimation />
           {/* <img className="shadow-sm rounded-md border-2 border-emerald-400" src={headimg} alt="" /> */}
         </div>
       </div>

@@ -1,11 +1,10 @@
 import React from "react";
 import { HyperText } from "./ui/hyper-text";
 import Image from "next/image";
-import banner from "../assets/Untitled design (1).png";
 
 const ProjectHeading = () => {
   return (
-    <div>
+    <div className="z-50">
       <div className="text-center grid place-items-center mt-10 space-y-3">
         <HyperText className={"text-emerald-500"}>My Project</HyperText>
         <p className="md:w-[50%] mx-auto text-gray-600">
@@ -15,7 +14,7 @@ const ProjectHeading = () => {
         </p>
       </div>
       <div className="px-20 z-50">
-        <Image height={500} layout="responsive" src={banner} />
+        <Image className="w-full" width={1000} height={500} layout="responsive" src="/assets/project-banner/project banner.webp" />
       </div>
     </div>
   );
