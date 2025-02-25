@@ -40,8 +40,8 @@ const Heading = () => {
             <a
               className="py-2 px-4 rounded-xl text-md font-medium bg-emerald-950 
           text-emerald-500 border border-emerald-900 flex items-center justify-center"
-              href="/Resume.pdf"
-              download={"Resume.pdf"}
+              href="/resume1.pdf"
+              download={"resume1.pdf"}
             >
               Download <TbFileCv size={20} className="ml-3" />
             </a>
