@@ -6,7 +6,7 @@ import { OrbitingCircles } from "./ui/orbiting-circles";
 const HeadingAnimaiton = () => {
   return (
     <div className="relative flex h-[400px] w-full flex-col items-center justify-center overflow-hidden">
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-white to-gray-500 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent">
         WD
       </span>
 

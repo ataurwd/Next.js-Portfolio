@@ -2,7 +2,7 @@ import { AnimatedSpan, Terminal } from './ui/terminal';
 
 const HeadingNewAnimation = () => {
     return (
-<Terminal className={'bg-transparent'}>
+<Terminal className={'bg-transparent bg-white'}>
   <AnimatedSpan>&gt; npx create-react-router@latest</AnimatedSpan>
 
   <AnimatedSpan delay={200} className="text-green-500">
