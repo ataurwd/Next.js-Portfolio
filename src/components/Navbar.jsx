@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b w-full">
-      <ScrollProgress className="top-[65px]" />
+      {/* <ScrollProgress className="top-[65px]" /> */}
       <div className="flex justify-between items-center px-5 lg:px-20 py-3">
         
         {/* Left: Logo (Always Left) */}
