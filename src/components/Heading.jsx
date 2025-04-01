@@ -11,7 +11,7 @@ import { Opulento } from "uvcanvas";
 
 const Heading = () => {
   return (
-    <div className="relative md:h-[500px] w-full overflow-hidden bg-gradient-to-b from-gray-900 to-black">
+    <div className="relative md:h-[110vh] h-[130vh] w-full overflow-hidden bg-gradient-to-b from-gray-900 to-black mt-[]">
       {/* Background Effect */}
       <Opulento className="absolute inset-0 w-full h-full opacity-50" />
 

@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="md:pb-24 lg:px-28 md:px-10 px-4 grid grid-cols-1 md:grid-cols-2 md:py-16 z-50">
+    <div className="md:pb-24 lg:px-28 md:px-10 px-4 grid grid-cols-1 md:grid-cols-2 md:py-16 z-50 my-10">
       {/* Right Side - Smaller Image */}
       <div className="flex justify-center items-center">
         <Image

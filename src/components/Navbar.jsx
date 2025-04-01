@@ -5,112 +5,96 @@ import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineContactPhone } from "react-icons/md";
 import { ScrollProgress } from "./ui/scroll-progress";
 import Image from "next/image";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="navbar md:px-20 relative sticky top-0 z-50 bg-white border-b">
-       <ScrollProgress className="top-[65px]" />
-      {/* Navbar Start */}
-      <div className="navbar-start">
-        {/* Dropdown for Mobile */}
-        <div className="dropdown">
-          <button
-            tabIndex={0}
-            aria-label="Toggle Menu"
-            className="btn btn-ghost lg:hidden mr-10"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </button>
-          <div className="relative">
-            {/* Mobile Logo */}
-            <Link href="/" className="font-semibold text-xl block md:hidden">
-              <Image
-                width={100}
-                height={100}
-                src="/assets/logo/logo.png"
-                alt="Logo"
-                className="h-12 md:w-auto w-24 absolute -right-[168px] -top-[44px]"
-              />
-            </Link>
-            {/* Mobile Dropdown Menu */}
-            <ul
-              tabIndex={0}
-              className={`z-50 menu menu-sm dropdown-content rounded-box mt-3 w-52 p-2 shadow bg-white`}
-            >
-              <li>
-                <Link href="/" className="">
-                  Home <IoHomeOutline className="ml-1" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/skills" className="hover:text-gray-300">
-                  My Skills <FaCode className="ml-1" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects" className="hover:text-gray-300">
-                  Projects <FaLaptopCode className="ml-1" />
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-gray-300">
-                  Contact <MdOutlineContactPhone className="ml-1" />
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        {/* Desktop Logo */}
-        <Link href="/" className="font-semibold text-xl hidden md:block">
-          <img
-            src="https://ataur-wd.netlify.app/assets/logo-CicHu1CF.png"
+    <nav className="sticky top-0 z-50 bg-white border-b w-full">
+      <ScrollProgress className="top-[65px]" />
+      <div className="flex justify-between items-center px-5 lg:px-20 py-3">
+        
+        {/* Left: Logo (Always Left) */}
+        <Link href="/" className="flex-shrink-0">
+          <Image
+            width={150}
+            height={150}
+            src="/assets/logo/logo.png"
             alt="Logo"
-            className="h-12 md:w-auto w-24"
+            className="h-12 w-auto"
           />
         </Link>
-      </div>
 
-      {/* Navbar Center */}
-      <div className="navbar-center hidden lg:flex">
-        <ul
-          className={`menu menu-horizontal px-1 space-x-5 text-[16px] font-medium`}
+        {/* Right: Navbar Links - Desktop */}
+        <div className="hidden lg:flex items-center space-x-6 text-[16px] font-medium">
+          <Link href="/" className="flex items-center space-x-1">
+            <span>Home</span> <IoHomeOutline />
+          </Link>
+          <Link href="/skills" className="flex items-center space-x-1">
+            <span>My Skills</span> <FaCode />
+          </Link>
+          <Link href="/projects" className="flex items-center space-x-1">
+            <span>Projects</span> <FaLaptopCode />
+          </Link>
+          <Link href="/contact" className="flex items-center space-x-1">
+            <span>Contact</span> <MdOutlineContactPhone />
+          </Link>
+        </div>
+
+        {/* Right: Hamburger Icon (Mobile) */}
+        <button
+          className="lg:hidden p-2"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle Menu"
         >
-          <li>
-            <Link href="/" className="">
-              Home <IoHomeOutline className="ml-1" />
-            </Link>
-          </li>
-          <li>
-            <Link href="/skills" className="">
-              My Skills <FaCode className="ml-1" />
-            </Link>
-          </li>
-          <li>
-            <Link href="/projects" className="">
-              Projects <FaLaptopCode className="ml-1" />
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className="">
-              Contact <MdOutlineContactPhone className="ml-1" />
-            </Link>
-          </li>
-        </ul>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-8 6h8"
+            />
+          </svg>
+        </button>
+
+        {/* Mobile Dropdown Menu */}
+        <div
+          className={`absolute left-0 top-16 w-full bg-white shadow-md lg:hidden transition-all duration-300 ease-in-out ${
+            isOpen ? "block" : "hidden"
+          }`}
+        >
+          <ul className="flex flex-col items-center space-y-3 py-4 text-[16px] font-medium">
+            <li>
+              <Link href="/" className="flex items-center space-x-1">
+                <span>Home</span> <IoHomeOutline />
+              </Link>
+            </li>
+            <li>
+              <Link href="/skills" className="flex items-center space-x-1">
+                <span>My Skills</span> <FaCode />
+              </Link>
+            </li>
+            <li>
+              <Link href="/projects" className="flex items-center space-x-1">
+                <span>Projects</span> <FaLaptopCode />
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="flex items-center space-x-1">
+                <span>Contact</span> <MdOutlineContactPhone />
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
