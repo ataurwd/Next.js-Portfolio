@@ -45,21 +45,21 @@ const Heading = () => {
               <Link
                 href={"https://github.com/ataurwd"}
                 target="blank"
-                className="w-10 h-10 border-2 border-emerald-500 grid place-items-center rounded-full hover:border-white hover:bg-emerald-500 hover:text-white transition"
+                className="w-10 h-10 border-2 border-emerald-500 grid place-items-center rounded-full hover:border-emerald-500 hover:bg-emerald-500 hover:text-white transition"
               >
                 <Github color="white" />
               </Link>
               <Link
                 href={"https://www.linkedin.com/in/ataur-rahman-653685254/"}
                 target="blank"
-                className="w-10 h-10 border-2 border-emerald-500 grid place-items-center rounded-full hover:border-white hover:bg-emerald-500 hover:text-white transition"
+                className="w-10 h-10 border-2 border-emerald-500 grid place-items-center rounded-full hover:border-emerald-500 hover:bg-emerald-500 hover:text-white transition"
               >
                 <FaLinkedin color="white" />
               </Link>
               <Link
                 href={"https://www.facebook.com/profile.php?id=61563838319684"}
                 target="blank"
-                className="w-10 h-10 border-2 border-emerald-500 grid place-items-center rounded-full hover:border-white hover:bg-emerald-500 hover:text-white transition"
+                className="w-10 h-10 border-2 border-emerald-500 grid place-items-center rounded-full hover:border-emerald-500 hover:bg-emerald-500 hover:text-white transition"
               >
                 <FacebookIcon color="white" />
               </Link>

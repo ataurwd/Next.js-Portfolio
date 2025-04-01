@@ -14,9 +14,9 @@ const About = () => {
       <div className="flex justify-center items-center">
         <Image
           id="servicesImg"
-          src="/assets/devimg/devimg.jpg"
+          src="/assets/devimg/devimg2.png"
           alt="About Me"
-          className="w-3/4 md:w-2/3 lg:w-[70%] opacity-9 hover:border-none"
+          className="w-3/4 md:w-2/3 lg:w-[70%] object-cover opacity-9 hover:border-none"
           width={400}
           height={400}
         />
