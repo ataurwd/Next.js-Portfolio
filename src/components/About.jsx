@@ -22,7 +22,7 @@ const About = () => {
         />
       </div>
       {/* Left Side - Centered Text */}
-      <div className=" space-y-4" data-aos="fade-up">
+      <div className=" space-y-4 flex flex-col justify-center" data-aos="fade-up">
         <BoxReveal>
           {" "}
           <h4

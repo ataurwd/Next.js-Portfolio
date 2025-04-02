@@ -11,12 +11,12 @@ import { Opulento } from "uvcanvas";
 
 const Heading = () => {
   return (
-    <div className="relative lg:h-[84vh] h-[130vh] w-full overflow-hidden bg-gradient-to-b from-gray-900 to-black mt-[]">
+    <div className="relative lg:h-[84vh] h-[150vh] w-full overflow-hidden bg-gradient-to-b from-gray-900 to-black mt-[]">
       {/* Background Effect */}
       <Opulento className="absolute inset-0 w-full h-full opacity-50" />
 
       {/* Content */}
-      <div className="lg:px-28 md:px-16 px-4 md:flex justify-between z-10 absolute top-0 w-full bg-white/30 backdrop-blur-sm rounded-lg p-8">
+      <div className="lg:px-28 h-full md:px-16 px-4 md:flex justify-between z-10 absolute top-0 w-full bg-white/30 backdrop-blur-sm rounded-lg p-8">
         <div className="space-y-6 w-full md:w-1/2 md:mt-0 flex flex-col justify-center md:text-left text-center">
           <h1 className="text-[24px] md:text-4xl font-semibold text-white" data-aos="fade-up">
             <br />
