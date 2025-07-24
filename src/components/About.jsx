@@ -12,14 +12,15 @@ const About = () => {
     <div className="md:pb-24 lg:px-28 md:px-10 px-4 grid grid-cols-1 md:grid-cols-2 md:py-16 z-50 my-10">
       {/* Right Side - Smaller Image */}
       <div className="flex justify-center items-center">
-        <Image
+        {/* <Image
           id="servicesImg"
-          src="/assets/devimg/devimg2.png"
+          src="/src/assets/ataur.jpg"
           alt="About Me"
           className="w-3/4 md:w-2/3 lg:w-[70%] object-cover opacity-9 hover:border-none"
           width={400}
           height={400}
-        />
+        /> */}
+        <img className="w-3/4 md:w-2/3 lg:w-[60%] object-cover opacity-9 hover:border-none"id="servicesImg" src="https://media.licdn.com/dms/image/v2/D5603AQHmKYfUCieqKg/profile-displayphoto-crop_800_800/B56Zgz_wAJHUAI-/0/1753219007317?e=1756339200&v=beta&t=flMBG0SId54crUp5OdJpSpVJhPHRSvw-ibx60m2SNZE" alt="" />
       </div>
       {/* Left Side - Centered Text */}
       <div className=" space-y-4 flex flex-col justify-center" data-aos="fade-up">
