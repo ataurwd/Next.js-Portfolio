@@ -20,7 +20,7 @@ const About = () => {
           width={400}
           height={400}
         /> */}
-        <img className="w-3/4 md:w-2/3 lg:w-[60%] object-cover opacity-9 hover:border-none"id="servicesImg" src="https://media.licdn.com/dms/image/v2/D5603AQHmKYfUCieqKg/profile-displayphoto-crop_800_800/B56Zgz_wAJHUAI-/0/1753219007317?e=1756339200&v=beta&t=flMBG0SId54crUp5OdJpSpVJhPHRSvw-ibx60m2SNZE" alt="" />
+        <img className="w-3/4 md:w-2/3 lg:w-[60%] object-cover opacity-9 hover:border-none"id="servicesImg" src="https://i.ibb.co/LDkTG7M9/ataur.jpg" alt="" />
       </div>
       {/* Left Side - Centered Text */}
       <div className=" space-y-4 flex flex-col justify-center" data-aos="fade-up">
